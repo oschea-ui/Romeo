@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultio Landing Page</title>
+  <style>
+    body {
+      font-family: Inter, Arial, sans-serif;
+      color: #232b2b;
+      background: #f8fafc;
+      margin: 0;
+    }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background: #fff; box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+      position: sticky; top: 0; z-index: 100;
+    }
+    nav .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: 0.5px; color: #1276e3; }
+    nav ul { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0;}
+    nav a { text-decoration: none; color: #232b2b; font-weight: 500; transition: color 0.2s;}
+    nav .cta {
+      padding: 0.5rem 1.2rem; background: #1276e3; color: #fff;
+      border-radius: 6px; font-weight: 600; margin-left: 2rem;
+    }
+    .hero {
+      display: flex; flex-direction: column; min-height: 420px;
+      align-items: center; justify-content: center;
+      background: linear-gradient(103deg, #dbeafe 50%, #fff 100%);
+      padding: 5rem 1rem 4rem;
+    }
+    .hero h1 { font-size: 2.8rem; font-weight: 700; margin:0; color: #181f2b; letter-spacing: -1px;}
+    .hero p { font-size: 1.2rem; color: #4a5568; max-width: 540px; margin: 1.5rem auto 2.2rem;}
+    .hero .consult-btn {
+      padding: 0.9rem 2.5rem; background: #1276e3; color: #fff;
+      border-radius: 8px; font-weight: 700; font-size: 1.2rem;
+      letter-spacing: 0.5px; text-decoration: none; box-shadow: 0 2px 8px #1276e332;
+    }
+    #services { background: #fff; margin: 0 auto; padding: 4rem 1rem; max-width: 1100px;}
+    #services h2 { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 2.5rem; color: #1276e3;}
+    .features { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;}
+    .feature-card {
+      background: #f2f6fd; border-radius: 10px; padding: 2rem; flex: 1 1 270px; min-width: 260px; max-width: 330px;
+      box-shadow: 0 2px 12px 0 rgba(18,118,227,0.03); text-align: center;
+    }
+    .feature-card .icon { font-size: 2.5rem; margin-bottom: 1.1rem;}
+    .feature-card h3 { font-weight: 700; font-size: 1.15rem; margin-bottom: 0.8rem; color: #181f2b;}
+    .feature-card p { color: #475569; font-size: 1.04rem;}
+    #about { background: #f8fafc; max-width: 1100px; margin: 0 auto; padding: 4rem 1rem; }
+    #about h2 { font-size: 2rem; font-weight: 700; color: #181f2b;}
+    #about p { color: #475569; margin: 1.2rem 0 0.8rem; font-size: 1.09rem;}
+    footer { background: #1276e3; color: #fff; padding: 2.7rem 1rem 1rem; margin-top: 3rem;}
+    footer a {
+      display: inline-block; padding: 0.6rem 1.5rem; background: #fff;
+      color: #1276e3; border-radius: 6px; font-weight: 600; text-decoration: none;
+    }
+    footer .copyright { margin-top: 2rem; font-size: 0.93rem; color: #c0dafc;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Consultio</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cta" href="#contact">Get Started</a>
+  </nav>
+  <section class="hero">
+    <h1>Unlock Your Business Potential</h1>
+    <p>Strategic marketing &amp; business consulting for modern organizations seeking growth and differentiation. Let us help craft your story and accelerate your results.</p>
+    <a class="consult-btn" href="#contact">Request a Free Consultation</a>
+  </section>
+  <section id="services">
+    <h2>Our Expertise</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">🔍</div>
+        <h3>Marketing Strategy</h3>
+        <p>End-to-end brand development, messaging and omni-channel marketing plans tailored to your goals.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📈</div>
+        <h3>Business Consulting</h3>
+        <p>Process optimization, market research, and organizational growth services for startups to enterprises.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">💡</div>
+        <h3>Digital Transformation</h3>
+        <p>Website, social, and automation solutions to modernize your brand and maximize reach.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div style="max-width: 765px; margin: 0 auto; text-align: center;">
+      <h2>Why Choose Consultio?</h2>
+      <p>
+        Our seasoned consultants have helped startups and Fortune 500s clarify their vision, build market relevance, and deliver key results.<br>
+        We believe in data-driven, creative solutions — all with a personal touch.
+      </p>
+    </div>
+  </section>
+  <footer id="contact">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h3 style="font-weight: 700; font-size: 1.3rem;">Ready to Start?</h3>
+      <p style="color:#e3eefa; margin:0.5rem 0 1.3rem; max-width: 400px;">
+        Contact us for a free strategy session and see how we can help your business stand out.
+      </p>
+      <a href="mailto:info@consultio.com">info@consultio.com</a>
+      <div class="copyright">
+        &copy; <span id="year"></span> Consultio Consulting. All rights reserved.
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
